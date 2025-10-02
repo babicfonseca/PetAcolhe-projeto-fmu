@@ -1,41 +1,49 @@
-<h1 align="center">Sistema de adoção de pets para apoio emocional</h1>
+<h1 align="center">Sistema de adoção de pets - O match perfeito 🐾</h1>
 
-<h1 align="center">EMOCIONEPET</h1>
+<h1 align="center">PetAcolhe</h1>
 
 </br>
 <div align="center">
-  <img width="300" height="300" src="./src/pet.png" alt="encontre o pet ideal"/>
+  <img width="300" height="300" src="./src/capaPetAcolhe.png" alt="encontre o pet ideal"/>
 </div>
 </br>
 
-Projeto Final do Curso de Imersão JavaScript - { reprograma }
+Projeto ODS 15 - FMU
 
 # Introdução
-Este projeto final está baseado em um dos objetivos de Desenvolvimento Sustentável no Brasil, qual seja: saúde e bem-estar.
+Este projeto final está baseado em um dos objetivos de Desenvolvimento Sustentável no Brasil, qual seja: Vida Terrestre - ODS 15.
 
-É de conhecimento geral que, hoje em dia, mais da metade da população no Brasil sofre com transtornos mentais.
-De acordo com os dados da Organização Mundial da Saúde (OMS), 86% dos brasileiros sofrem com algum tipo de transtorno mental, como ansiedade e depressão.
+O PetAcolhe é um projeto criado com o propósito de reduzir a quantidade de animais em situação de abandono e incentivar a adoção responsável.
 
-Um dos fatores que mais auxiliam na estabilização do transtorno, ou até em sua melhora, são os animais de apoio emocional. Eles atuam para fornecer conforto, apoio e segurança emocional ao tutor.
+No Brasil, milhões de cães e gatos vivem nas ruas, enfrentando fome, frio, maus-tratos e doenças. Ao mesmo tempo, ONGs e protetores independentes lidam diariamente com a superlotação e a falta de recursos para resgatar e manter tantos animais.
 
-Os animais de apoio emocional não são considerados pets terapeutas, nem animais de serviço: seu principal papel é oferecer presença, companhia e afeto, ajudando a tranquilizar o tutor em diferentes momentos e também contribuindo para a independência da pessoa. Além disso, eles são capazes de ajudar o tutor a realizar atividades que ele tem dificuldade, como a prática de exercícios físicos ou viajar de avião, e até incentivar a interação com outras pessoas de maneira positiva, o que pode ajudar a melhorar o bem-estar emocional.
+O sistema surge como uma ferramenta de apoio para dar mais visibilidade a esses animais e facilitar o processo de adoção, contribuindo diretamente para:
+
+    🐶 Diminuir o abandono, criando um canal de conexão entre animais e famílias;
+    🐾 Apoiar ONGs e protetores, oferecendo um espaço para divulgar resgates e buscar adotantes; e
+    💚 Conscientizar a comunidade sobre a importância da adoção e da guarda responsável.
+
+Então, a proposta do sistema é criar um espaço digital que consiga aproximar tutores, protetores independetes e ONGs, ampliando a divulgação de animais resgatados e buscando reduzir o abandono de animais por meio de um "match" ideal entre tutor e pet.
+
+É importante ressaltar que o projeto está alinhado principalmente à ODS 15 - Vida Terrestre, mas também abrange um pouco da ODS 11 - Cidades e Comunidades Sustentáveis, pois uma cidade sustentável é também aquela que acolhe e cuida de todos os seres vivos que nela habitam.
+
 
 </br>
 
 
 # Proposta do Projeto
 
-Com base nisso, o presente projeto visa associar tutores que necessitem de pets de apoio emocional e os animais que estão disponíveis para adoção, dando um "match" com base nas características buscadas pelos tutores.
+Com base nisso, o presente projeto visa associar tutores que querem adotar pets e os animais que estão disponíveis para adoção, dando um "match" com base nas características buscadas pelos tutores.
 
 O projeto abarca apenas os animais da espécie cachorro, sendo presumido que todos são vacinados, castrados e vermifugados antes da adoção.
 
-A EmocionePet é um sistema com os dados dos tutores e as características bsucadas em um pet e as características dos pets que estão disponíveis para adoção, inclusive a localidade que se encontra.
+A PetAcolhe é um sistema com os dados dos tutores e as características buscadas em um pet e as características dos pets que estão disponíveis para adoção, inclusive a localidade em que se encontram.
 
 
 
 ## Cadastro do Tutor
 
-O tutor que está em busca de um pet de suporte emocional irá fazer um cadastro, preenchendo os seus dados e as características que busca em um pet.
+O tutor que está em busca de um pet irá fazer um cadastro, preenchendo os seus dados e as características que busca em um pet.
 
 Primeiro será necessário informar as características desejadas, utilizando a classe Características, quanto às seguintes questões: 
 - filhote ("true" ou "false");
@@ -63,15 +71,15 @@ Por exemplo:
 ``````
 const caracteristicaTutor1 = new Caracteristicas(true, "curta", "grande", true);
 
-const tutor1 = new Tutor("Bárbara", 27, "61999885688", "barbara@reprograma.com.br", "São Paulo - SP", false, true, "suporte emocional", caracteristicaTutor1);
+const tutor1 = new Tutor("Bárbara", 29, "61999885688", "barbara@fmu.com.br", "São Paulo - SP", false, true, "suporte emocional", caracteristicaTutor1);
 
 ``````
 
 ## Cadastro do Pet
 
-O EmocionePet contará com o cadastro dos animais que estão disponíveis para adoção e que darão suporte emocional para os tutores. As informações necessárias são:
+O PetAcolhe contará com o cadastro dos animais que estão disponíveis para adoção. As informações necessárias são:
 
-- id do Pet;
+- número de identificação do pet;
 - raça;
 - idade;
 - porte;
@@ -144,7 +152,7 @@ class Tutor {
         };
 
         this.possuiOutrosAnimais = possuiOutrosAnimais;
-        this.motivoAdocao = motivoAdocao // suporte emocional. Seria só pra suporte emocional?
+        this.motivoAdocao = motivoAdocao 
         this.caracteristicasBuscadas = caracteristicas;
 
         if(idade >= 60){

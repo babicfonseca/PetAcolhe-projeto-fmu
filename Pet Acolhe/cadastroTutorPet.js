@@ -42,6 +42,7 @@ const pet10 = new Pet(10, "Pug", 6, "pequeno", "curta", true, "cinza", "macho", 
 const pet11 = new Pet(11, "SRD", 8, "médio", "curta", true, "marrom", "fêmea", "Brasília - DF");
 
 //console.log(Pet.petsCadastrados)
+console.log(Tutor.tutoresCadastrados)
 
 const tutores = [tutor1, tutor2, tutor3, tutor4, tutor5, tutor6, tutor7]
 const pets = [pet1, pet2, pet3, pet4, pet5, pet6, pet7, pet8, pet9, pet10, pet11]
