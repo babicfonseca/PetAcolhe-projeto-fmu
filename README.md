@@ -19,9 +19,9 @@ No Brasil, milhões de cães e gatos vivem nas ruas, enfrentando fome, frio, mau
 
 O sistema surge como uma ferramenta de apoio para dar mais visibilidade a esses animais e facilitar o processo de adoção, contribuindo diretamente para:
 
-    🐶 Diminuir o abandono, criando um canal de conexão entre animais e famílias;
-    🐾 Apoiar ONGs e protetores, oferecendo um espaço para divulgar resgates e buscar adotantes; e
-    💚 Conscientizar a comunidade sobre a importância da adoção e da guarda responsável.
+     🐶 Diminuir o abandono, criando um canal de conexão entre animais e famílias;
+     🐾 Apoiar ONGs e protetores, oferecendo um espaço para divulgar resgates e buscar adotantes; e
+     💚 Conscientizar a comunidade sobre a importância da adoção e da guarda responsável.
 
 Então, a proposta do sistema é criar um espaço digital que consiga aproximar tutores, protetores independetes e ONGs, ampliando a divulgação de animais resgatados e buscando reduzir o abandono de animais por meio de um "match" ideal entre tutor e pet.
 
@@ -295,39 +295,3 @@ if(listaFiltradaPets.lenght === 0) {
 }
 
 ```
-
-## Testes Unitários
-
-Foi utilizado o método de testes unitários para que fossem feitos testes em pequenas partes do sistema, evitando acúmulo de erros e dificuldade de consertá-los posteriormente.
-
-Exemplo na classe Tutor:
-
-</br>
-<div align="center">
-  <img width=100% src="./src/testesTutor.png" alt="testes pet"/>
-</div>
-</br>
-
-Exemplo na classe Pet:
-
-</br>
-<div align="center">
-  <img width=100% src="./src/testesPet.png" alt="testes pet"/>
-</div>
-</br>
-
-Exemplo na classe Caracteristicas:
-
-</br>
-<div align="center">
-  <img width=100% src="./src/testesCaracterísticas.png" alt="testes caracteristicas"/>
-</div>
-</br>
-
-Exemplo na função matchPetTutor:
-
-</br>
-<div align="center">
-  <img width=100% src="./src/testesMatch.png" alt="testes caracteristicas"/>
-</div>
-</br>
