@@ -4,7 +4,7 @@
 
 </br>
 <div align="center">
-  <img width="300" height="300" src="./src/capaPetAcolhe.png" alt="encontre o pet ideal"/>
+  <img width="300" height="400" src="./src/capaPetAcolhe.png" alt="encontre o pet ideal"/>
 </div>
 </br>
 

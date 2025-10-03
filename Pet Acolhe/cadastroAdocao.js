@@ -1,7 +1,7 @@
-const { Caracteristicas } = require("./caracteristicasBuscadas");
-const { Pet } = require("./pet");
-const { Tutor } = require("./tutor");
-
+const { Caracteristicas } = require("./caracteristicasBuscadas.js");
+const { Pet } = require("./pet.js");
+const { Tutor } = require("./tutor.js");
+const {Adocao} = require("./adocao.js");
 
 
 // Lista de características buscadas e tutores cadastrados
@@ -46,5 +46,12 @@ console.log(Tutor.tutoresCadastrados)
 
 const tutores = [tutor1, tutor2, tutor3, tutor4, tutor5, tutor6, tutor7]
 const pets = [pet1, pet2, pet3, pet4, pet5, pet6, pet7, pet8, pet9, pet10, pet11]
+
+
+// Exemplo de uso do sistema de adoção
+const novaAdocao = Adocao.registrarAdocao(Tutor.tutoresCadastrados[0], Pet.petsCadastrados[1]);
+
+// Listar todas as adoções realizadas
+console.log(Adocao.listaDeAdocoes());
 
 module.exports = {tutores, pets}

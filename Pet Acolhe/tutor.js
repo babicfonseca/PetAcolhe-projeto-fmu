@@ -58,8 +58,45 @@ class Tutor {
 
 
     cadastroTutor(nome, idade, telefone, email, localidade, alergiaAPelo, possuiOutrosAnimais, motivoAdocao, caracteristicas) {
-        if(Tutor instanceof Tutor) {
-            this.nome = nome;
+        
+        if (typeof nome !== "string" || nome.trim() === "") {
+            throw new Error("Nome inválido.");
+        }
+
+        if (typeof idade !== "number" || idade < 18) {
+            throw new Error("Idade inválida. Tutor deve ser maior de 18 anos.");
+        }
+
+        if (typeof telefone !== "string"|| telefone.trim().length < 8) {
+            throw new Error("Telefone inválido.");
+        }
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (typeof email !== "string" || !emailRegex.test(email)) {
+            throw new Error("Email inválido.");
+        }
+
+        if (typeof localidade !== "string"|| localidade.trim() === "") {
+            throw new Error("Localidade inválida.");
+        }
+
+        if (typeof alergiaAPelo !== "boolean") {
+            throw new Error("Campo de alergia a pelo inválida. Use true ou false.");
+        }
+
+        if (typeof possuiOutrosAnimais !== "boolean") {
+            throw new Error("Campo de possuir outros animais inválida. Use true ou false.");
+        }
+
+        if (typeof motivoAdocao !== "string"|| motivoAdocao.trim() === "") {
+            throw new Error("Motivo de adoção inválido.");
+        }
+
+        if (typeof caracteristicas !== "object"|| caracteristicas === null) {
+            throw new Error("Características buscadas inválidas.");
+        }
+
+            this.nome = nome;   
             this.idade = idade;
             this.#telefone = telefone;
             this.email = email;
@@ -70,10 +107,8 @@ class Tutor {
             this.caracteristicasBuscadas = caracteristicas;
                 
             return "Tutor cadastrado";
-        } else {
-            throw new Error("Erro no cadastro, dados inválidos");
         }
-      }
+        
 
     maioridade() {
         if(this.idade <= 18) {
@@ -82,6 +117,4 @@ class Tutor {
     }
 }
 
-
 module.exports = { Tutor };
-
