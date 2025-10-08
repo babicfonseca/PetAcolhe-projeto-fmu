@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head> 
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>PetAcolhe</title>
+    <link rel="stylesheet" href="style.css"/>
+    </head>
+
+<body>
+    <header>
+        <h1>PetAcolhe</h1>
+        <h2>Seu novo melhor amigo está aqui!</h2>
+        <p>Registrar adoção e acompanhar o histórico</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Registrar Adoção</h2>
+            <form id="adocaoForm">
+                <label for="tutorSelect">Selecione o Tutor</label>
+                <select id="tutorSelect"></select>
+        
+                <label for="petSelect">Selecione o Pet</label>
+                <select id="petSelect"></select>
+
+                <button type="submit" id="btnRegistrar">Registrar Adoção</button>
+            </form>
+    
+            <div id="scoreDisplay" class="score-display"></div>
+            <div id="mensagem" class="mensagem"></div>
+        </section>
+
+        <section class="card">
+            <h2>Pets Disponíveis</h2>
+            <ul id="listaPets" class="lista"></ul>
+        </section>
+
+        <section class="card">
+            <h2>Histórico de Adoções</h2>
+            <ul id="historico" class="lista"></ul>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
